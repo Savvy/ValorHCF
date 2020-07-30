@@ -95,114 +95,89 @@
 	</header>
 	<div class="container">
 		<div class="main">
-			<div class="main-content">
-				<div class="category">
-					<div class="forum-container">
-						<div class="forum-header">
-							<i class="mdi mdi-bullhorn"></i>
-							<a href="#">Administration</a>
-							<i data-toggle="collapse" data-target="#administration" aria-expanded="true" aria-controls="adminisration"
-								class="mdi mdi-chevron-down collapse-control"></i>
+			<div id="leaderboard-header" class="main-header">
+				Teams Leaderboard
+				<div class="right">
+					<div class="dropdown">
+						<a class="leaderboard-drop" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Jan 1 - Jan 7, 2020 <i class="mdi mdi-chevron-down"></i>
+						</a>
+						<div class="dropdown-menu dropdown-leaderboard" aria-labelledby="dLabel">
+							<ul>
+								<li><a href="#">Jan 7 - Jan 14, 2020</a></li>
+								<li><a href="#">Jan 14 - Jan 21, 2020</a></li>
+							</ul>
 						</div>
-						<div class="forums collapse show" id="administration">
-							<div class="forum">
-								<i class="mdi mdi-message"></i>
-								<div class="forum-title">
-									<a href="#">Announcements</a>
-									<span>Some description of this category</span>
-								</div>
-								<div class="forum-stats">
-									<div class="forum-stat">
-										<h4>Threads</h4>
-										<span>326</span>
-									</div>
-									<div class="forum-stat">
-										<h4>Messages</h4>
-										<span>326</span>
-									</div>
-									<div class="forum-stat">
-										<h4>Last Active</h4>
-										<span>Today, 6:24 PM</span>
-									</div>
-								</div>
+					</div>
+					<div class="dropdown">
+						<a class="leaderboard-drop dropdown-leaderboard" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Kills <i class="mdi mdi-chevron-down"></i>
+						</a>
+							<div class="dropdown-menu dropdown-leaderboard" aria-labelledby="dLabel">
+								<ul>
+									<li><a href="#">Deaths</a></li>
+								</ul>
 							</div>
-							<div class="forum">
-								<i class="mdi mdi-message"></i>
-								<div class="forum-title">
-									<a href="#">Announcements</a>
-									<span>Some description of this category</span>
-								</div>
-								<div class="forum-stats">
-									<div class="forum-stat">
-										<h4>Threads</h4>
-										<span>326</span>
-									</div>
-									<div class="forum-stat">
-										<h4>Messages</h4>
-										<span>326</span>
-									</div>
-									<div class="forum-stat">
-										<h4>Last Active</h4>
-										<span>Today, 6:24 PM</span>
-									</div>
-								</div>
-							</div>
-							<div class="forum">
-								<i class="mdi mdi-message"></i>
-								<div class="forum-title">
-									<a href="#">Announcements</a>
-									<span>Some description of this category</span>
-								</div>
-								<div class="forum-stats">
-									<div class="forum-stat">
-										<h4>Threads</h4>
-										<span>326</span>
-									</div>
-									<div class="forum-stat">
-										<h4>Messages</h4>
-										<span>326</span>
-									</div>
-									<div class="forum-stat">
-										<h4>Last Active</h4>
-										<span>Today, 6:24 PM</span>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
-				<div class="category">
-					<div class="forum-container">
-						<div class="forum-header">
-							<i class="mdi mdi-bullhorn"></i>
-							<a href="#">General Discussion</a>
-							<i data-toggle="collapse" data-target="#general-discussion" aria-expanded="true" aria-controls="general-discussion"
-								class="mdi mdi-chevron-down collapse-control"></i>
-						</div>
-						<div class="forums collapse show" id="general-discussion">
-							<div class="forum">
-								<i class="mdi mdi-message"></i>
-								<div class="forum-title">
-									<a href="#">Announcements</a>
-									<span>Some description of this category</span>
-								</div>
-								<div class="forum-stats">
-									<div class="forum-stat">
-										<h4>Threads</h4>
-										<span>326</span>
-									</div>
-									<div class="forum-stat">
-										<h4>Messages</h4>
-										<span>326</span>
-									</div>
-									<div class="forum-stat">
-										<h4>Last Active</h4>
-										<span>Today, 6:24 PM</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+			</div>
+
+			<div class="main-content">
+				<div class="leaderboard table-responsive">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="col">Rank</th>
+								<th scope="col">Player</th>
+								<th scope="col">Kills</th>
+								<th scope="col">Deaths</th>
+								<th scope="col">Diamonds Mined</th>
+								<th scope="col">Play Time</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row"><i class="mdi mdi-trophy gold"></i></th>
+								<td>DrePvP</td>
+								<td>56</td>
+								<td>6</td>
+								<td>566</td>
+								<td>68 hours</td>
+							</tr>
+							<tr>
+								<th scope="row"><i class="mdi mdi-trophy silver"></i></th>
+								<td>DrePvP</td>
+								<td>56</td>
+								<td>6</td>
+								<td>566</td>
+								<td>68 hours</td>
+							</tr>
+							<tr>
+								<th scope="row"><i class="mdi mdi-trophy bronze"></i></th>
+								<td>DrePvP</td>
+								<td>56</td>
+								<td>6</td>
+								<td>566</td>
+								<td>68 hours</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>DrePvP</td>
+								<td>56</td>
+								<td>6</td>
+								<td>566</td>
+								<td>68 hours</td>
+							</tr>
+							<tr>
+								<th scope="row">5</th>
+								<td>DrePvP</td>
+								<td>56</td>
+								<td>6</td>
+								<td>566</td>
+								<td>68 hours</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
@@ -232,5 +207,4 @@
 		});
 	</script>
 </body>
-
 </html>
