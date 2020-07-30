@@ -941,9 +941,6 @@ nav.navigation-menu.active {
 	transition: color 0.13s ease-in-out;
 }
 
-.stat-container > .socials > a:hover {
-	color: #fff;
-}
 .stat-container > .socials > a {
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.6);
@@ -953,6 +950,10 @@ nav.navigation-menu.active {
 
 .stat-container > .socials > a:last-of-type {
     margin-right: 0;
+}
+
+.stat-container > .socials > a:hover {
+	color: #E14444;
 }
 
 .friends {
