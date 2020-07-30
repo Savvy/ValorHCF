@@ -89,7 +89,7 @@ header {
 .nav-items a {
     color: #ddd;
     font-size: 1.45rem;
-    font-weight: 900;
+    font-weight: 800;
     margin: 0 15px;
     text-decoration: none;
 }
@@ -282,7 +282,7 @@ header {
 	display: inline-block;
 	position: relative;
     color: #E14444;
-	font-weight: 900;
+	font-weight: 800;
 	margin-bottom: 15px;
 }
 
@@ -359,7 +359,7 @@ header {
 .content-title > h1 {
 	text-transform: uppercase;
 	font-size: 1.7rem;
-	font-weight: 900;
+	font-weight: 800;
 	color: #fff;
 }
 
@@ -415,7 +415,7 @@ header {
 	text-align: center;
     position: relative;
     color: #E14444;
-    font-weight: 900;
+    font-weight: 800;
 	margin-bottom: 15px;
 	font-size: 1rem;
 	text-transform: uppercase;
@@ -1386,7 +1386,7 @@ a.leaderboard-drop {
 
 .forum-post > .post > .post-title {
     color: #EAEEF5;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 1.5rem;
     padding: 10px 0;
 }
