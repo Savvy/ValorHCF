@@ -367,6 +367,19 @@ header {
 	color: #fff;
 }
 
+.content-header {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.new-post {
+    background: #E14444;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+}
+
 .announcements {
     display: flex;
     width: 100%;
@@ -806,13 +819,13 @@ nav.navigation-menu.active {
 	}
 }
 
-.content-header > h2 {
+.header-title > h2 {
 	color: #E14444;
 	font-weight: bold;
 	margin-bottom: 0;
 }
 
-.content-header > span {
+.header-title > span {
 	color: #fff;
 }
 
