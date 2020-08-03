@@ -380,6 +380,14 @@ a.new-post {
     color: #fff;
 }
 
+.main-header.with-post {
+    justify-content: space-between;
+}
+
+.main-header.with-post > .new-post {
+	padding: 5px 10px;
+}
+
 .announcements {
     display: flex;
     width: 100%;
