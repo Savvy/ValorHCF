@@ -385,6 +385,7 @@ a.new-post {
 
 .main-header.with-post > .new-post {
 	padding: 5px 10px;
+	font-size: 12px;
 }
 
 .announcements {
