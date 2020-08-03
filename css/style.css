@@ -365,17 +365,22 @@ header {
 }
 
 .announcements {
-	display: flex;
-	width: 100%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .announcements .announcement {
 	position: relative;
-	border-radius: 5px;
-	margin: 0 15px 15px 0;
+    border-radius: 5px;
+    flex: 1 1 45%;
+    max-width: 45%;
+    margin: 0 15px 15px 0;
 }
 
-.announcements > .announcement:last-of-type {
+.announcements > .announcement:nth-child(2),
+.announcements > .announcement:nth-child(4) {
 	margin-right: 0;
 }
 
@@ -519,12 +524,12 @@ header {
 
 .videos > .coming-soon, 
 .videos > a {
-	width: 100%;
-	max-width: calc(50% - 5px);
-	min-height: 400px;;
-	margin-top: 5px;
-	margin-right: 5px;
-	border-radius: 5px;
+    width: 100%;
+    max-width: 345px;
+    min-height: 345px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
 }
 
 .videos > .coming-soon {
@@ -542,6 +547,7 @@ header {
 	text-decoration: none;
 	font-size: 1.6rem;
 	font-weight: 800;
+	margin-top: 15px;
 }
 
 .videos > a > img {
@@ -566,12 +572,6 @@ footer {
     align-items: center;
     flex-direction: row;
 }
-
-.videos > .coming-soon, .videos > a {
-	max-height: 291px;
-	min-height: 291px;
-	margin-bottom: 10px;
-}
 }
 
 @media screen and (max-width: 992px) {
@@ -581,13 +581,12 @@ footer {
 	}
 
 	.announcements .announcement {
-		margin: 0 !important;
-		margin-bottom: 10px !important;
+    	margin: 0 10px 10px 0;
 	}
 
-.header-nav input[type="search"] {
-	max-width: 114px;
-}
+	.header-nav input[type="search"] {
+		max-width: 114px;
+	}
 	.content-container {
 		flex-direction: column;
 	}
@@ -889,6 +888,10 @@ nav.navigation-menu.active {
 }
 
 @media(max-width: 768px) {
+	.announcements .announcement {
+    	flex: 1 1 100%;
+    	max-width: 100%;
+	}
 	.threads > .forum > img {
 		width: 50px;
 		height: auto;
