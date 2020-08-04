@@ -44,8 +44,14 @@
 								<a href="./forums.html">Forums</a>
 							</div>
 							<img class="header-image" src="https://i.imgur.com/JcTis4d.png" alt="Valor Shield Logo">
-							<div class="header-right">
-								<a href="./leaderboard.html">Stats</a>
+							<div class="header-right dropdown">
+								<a id="stat-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Stats
+								</a>
+								<ul id="stat-dropdown" class="dropdown-menu" aria-labelledby="stat-nav">
+									<li><a href="#">HCF</a></li>
+									<li><a href="#">Kits</a></li>
+								</ul>
 								<a href="https://store.valorhcf.net">Store</a>
 							</div>
 						</div>
@@ -53,7 +59,8 @@
 					<div class="col-3">
 						<div class="user-status toggle-tooltip" data-placement="bottom" data-original-title="Login"
 							style="float: right;">
-							<a href="/login" id="login" class="login-btn btn btn-info" style="border-radius: 5px;">Login</a>
+							<a href="/login" id="login" class="login-btn btn btn-info"
+								style="border-radius: 5px;">Login</a>
 							<a href="/register" id="register" class="login-btn btn btn-info"
 								style="border-radius: 5px;">Register</a>
 						</div>
@@ -75,7 +82,8 @@
 							</a>
 						</div>
 						<div class="col-4" style="display: flex; justify-content: center; align-items: center">
-							<img class="img-fluid" id="mid-image" src="https://i.imgur.com/WoG13Wk.png" alt="Valor Logo">
+							<img class="img-fluid" id="mid-image" src="https://i.imgur.com/WoG13Wk.png"
+								alt="Valor Logo">
 						</div>
 						<div class="col-4" style="display: flex">
 							<div class="mid-right" data-clipboard-text="play.valorhcf.net">
@@ -100,8 +108,8 @@
 						<div class="forum-header">
 							<i class="mdi mdi-bullhorn"></i>
 							<a href="#admin">Administration</a>
-							<i data-toggle="collapse" data-target="#administration" aria-expanded="true" aria-controls="adminisration"
-								class="mdi mdi-chevron-down collapse-control"></i>
+							<i data-toggle="collapse" data-target="#administration" aria-expanded="true"
+								aria-controls="adminisration" class="mdi mdi-chevron-down collapse-control"></i>
 						</div>
 						<div class="forums collapse show" id="administration">
 							<div class="forum">

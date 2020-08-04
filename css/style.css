@@ -95,7 +95,8 @@ header {
     font-size: 1.45rem;
     font-weight: 800;
     margin: 0 15px;
-    text-decoration: none;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .nav-items a:hover {
@@ -1498,4 +1499,22 @@ a.leaderboard-drop {
 
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: rgba(255,255,255,.02);
+}
+
+#stat-dropdown > li > a {
+	font-weight: normal;
+    font-size: 1.2rem;
+	color: #fff;
+}
+
+#stat-nav::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.25em solid;
+    border-right: 0.25em solid transparent;
+    border-bottom: 0;
+    border-left: 0.25em solid transparent;
 }

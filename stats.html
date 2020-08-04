@@ -44,8 +44,14 @@
 								<a href="./forums.html">Forums</a>
 							</div>
 							<img class="header-image" src="https://i.imgur.com/JcTis4d.png" alt="Valor Shield Logo">
-							<div class="header-right">
-								<a href="./leaderboard.html">Stats</a>
+							<div class="header-right dropdown">
+								<a id="stat-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Stats
+								</a>
+								<ul id="stat-dropdown" class="dropdown-menu" aria-labelledby="stat-nav">
+									<li><a href="#">HCF</a></li>
+									<li><a href="#">Kits</a></li>
+								</ul>
 								<a href="https://store.valorhcf.net">Store</a>
 							</div>
 						</div>
@@ -53,7 +59,8 @@
 					<div class="col-3">
 						<div class="user-status toggle-tooltip" data-placement="bottom" data-original-title="Login"
 							style="float: right;">
-							<a href="/login" id="login" class="login-btn btn btn-info" style="border-radius: 5px;">Login</a>
+							<a href="/login" id="login" class="login-btn btn btn-info"
+								style="border-radius: 5px;">Login</a>
 							<a href="/register" id="register" class="login-btn btn btn-info"
 								style="border-radius: 5px;">Register</a>
 						</div>
@@ -75,7 +82,8 @@
 							</a>
 						</div>
 						<div class="col-4" style="display: flex; justify-content: center; align-items: center">
-							<img class="img-fluid" id="mid-image" src="https://i.imgur.com/WoG13Wk.png" alt="Valor Logo">
+							<img class="img-fluid" id="mid-image" src="https://i.imgur.com/WoG13Wk.png"
+								alt="Valor Logo">
 						</div>
 						<div class="col-4" style="display: flex">
 							<div class="mid-right" data-clipboard-text="play.valorhcf.net">
@@ -186,14 +194,16 @@
 								<div class="tab-pane active" id="general" role="tabpanel" aria-labelledby="general-tab">
 									<div class="profile-comments">
 										<div class="user-comment">
-											<img src="https://visage.surgeplay.com/head/1bbcbbf2e36646ffb3e6f7db3b428b22" alt="DrePvP">
+											<img src="https://visage.surgeplay.com/head/1bbcbbf2e36646ffb3e6f7db3b428b22"
+												alt="DrePvP">
 											<div class="comment-meta">
 												<div class="user"><a href="#">whoSavvy</a><span>52 minutes ago</span>
 												</div>
 												<div class="comment">This is an example profile post.</div>
 											</div>
 											<div class="dropup dropdown-icon">
-												<i class="mdi mdi-chevron-up" id="comment-dropdown" data-toggle="dropdown" aria-haspopup="true"
+												<i class="mdi mdi-chevron-up" id="comment-dropdown"
+													data-toggle="dropdown" aria-haspopup="true"
 													aria-expanded="false"></i>
 												<div class="dropdown-menu" aria-labelledby="comment-dropdown">
 													<a href="#" class="dropdown-item">Copy Permalink</a>
@@ -201,14 +211,16 @@
 											</div>
 										</div>
 										<div class="user-comment">
-											<img src="https://visage.surgeplay.com/head/1bbcbbf2e36646ffb3e6f7db3b428b22" alt="DrePvP">
+											<img src="https://visage.surgeplay.com/head/1bbcbbf2e36646ffb3e6f7db3b428b22"
+												alt="DrePvP">
 											<div class="comment-meta">
 												<div class="user"><a href="#">whoSavvy</a><span>52 minutes ago</span>
 												</div>
 												<div class="comment">This is an example profile post.</div>
 											</div>
 											<div class="dropup dropdown-icon">
-												<i class="mdi mdi-chevron-up" id="comment-dropdown" data-toggle="dropdown" aria-haspopup="true"
+												<i class="mdi mdi-chevron-up" id="comment-dropdown"
+													data-toggle="dropdown" aria-haspopup="true"
 													aria-expanded="false"></i>
 												<div class="dropdown-menu" aria-labelledby="comment-dropdown">
 													<a href="#" class="dropdown-item">Copy Permalink</a>
@@ -216,14 +228,16 @@
 											</div>
 										</div>
 										<div class="user-comment">
-											<img src="https://visage.surgeplay.com/head/1bbcbbf2e36646ffb3e6f7db3b428b22" alt="DrePvP">
+											<img src="https://visage.surgeplay.com/head/1bbcbbf2e36646ffb3e6f7db3b428b22"
+												alt="DrePvP">
 											<div class="comment-meta">
 												<div class="user"><a href="#">whoSavvy</a><span>52 minutes ago</span>
 												</div>
 												<div class="comment">This is an example profile post.</div>
 											</div>
 											<div class="dropup dropdown-icon">
-												<i class="mdi mdi-chevron-up" id="comment-dropdown" data-toggle="dropdown" aria-haspopup="true"
+												<i class="mdi mdi-chevron-up" id="comment-dropdown"
+													data-toggle="dropdown" aria-haspopup="true"
 													aria-expanded="false"></i>
 												<div class="dropdown-menu" aria-labelledby="comment-dropdown">
 													<a href="#" class="dropdown-item">Copy Permalink</a>
@@ -235,7 +249,9 @@
 								<div class="tab-pane" id="player-stats" role="tabpanel" aria-labelledby="stats-tab">
 									<div class="player-stat">
 										<div class="stat">
-											<div class="stat-header"><h5>HCF</h5></div>
+											<div class="stat-header">
+												<h5>HCF</h5>
+											</div>
 											<ul>
 												<li>Kills <span>34</span></li>
 												<li>Deaths <span>34</span></li>
@@ -257,29 +273,35 @@
 											</ul>
 										</div>
 									</div>
-				 				</div>
+								</div>
 								<div class="tab-pane" id="forum" role="tabpanel" aria-labelledby="forum-tab">
 									<div class="forum-posts">
 										<div class="forum-post">
-											<img src="https://visage.surgeplay.com/head/1bbcbbf2e36646ffb3e6f7db3b428b22" alt="DrePvP">
+											<img src="https://visage.surgeplay.com/head/1bbcbbf2e36646ffb3e6f7db3b428b22"
+												alt="DrePvP">
 											<div class="post-meta">
-												<div class="post-title"><a href="#">DrePvP</a> replied to the thread. <a href="#">An admin thread</a>.</div>
+												<div class="post-title"><a href="#">DrePvP</a> replied to the thread. <a
+														href="#">An admin thread</a>.</div>
 												<div class="post-message">This is a message.</div>
 												<div class="post-time">Today at 10:48 PM</div>
 											</div>
 										</div>
 										<div class="forum-post">
-											<img src="https://visage.surgeplay.com/head/1bbcbbf2e36646ffb3e6f7db3b428b22" alt="DrePvP">
+											<img src="https://visage.surgeplay.com/head/1bbcbbf2e36646ffb3e6f7db3b428b22"
+												alt="DrePvP">
 											<div class="post-meta">
-												<div class="post-title"><a href="#">DrePvP</a> replied to the thread. <a href="#">An admin thread</a>.</div>
+												<div class="post-title"><a href="#">DrePvP</a> replied to the thread. <a
+														href="#">An admin thread</a>.</div>
 												<div class="post-message">This is a message.</div>
 												<div class="post-time">Today at 10:48 PM</div>
 											</div>
 										</div>
 										<div class="forum-post">
-											<img src="https://visage.surgeplay.com/head/1bbcbbf2e36646ffb3e6f7db3b428b22" alt="DrePvP">
+											<img src="https://visage.surgeplay.com/head/1bbcbbf2e36646ffb3e6f7db3b428b22"
+												alt="DrePvP">
 											<div class="post-meta">
-												<div class="post-title"><a href="#">DrePvP</a> replied to the thread. <a href="#">An admin thread</a>.</div>
+												<div class="post-title"><a href="#">DrePvP</a> replied to the thread. <a
+														href="#">An admin thread</a>.</div>
 												<div class="post-message">This is a message.</div>
 												<div class="post-time">Today at 10:48 PM</div>
 											</div>
