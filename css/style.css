@@ -1522,3 +1522,32 @@ a.leaderboard-drop {
 .online {
 	color: #00b894;
 }
+
+.post-form {
+	width: 100%;
+	color: #fff;
+}
+
+.post-form > .post-thread {
+	margin-top:25px;
+	background: #E14444;
+	border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+	color: #fff;
+	box-shadow: none;
+	outline: none;
+}
+
+.post-form > .post-thread:hover,
+.post-form > .post-thread:active {
+	background: #e85f5f !important;
+	border:none !important;
+	box-shadow: none;
+	outline: none;
+}
+
+.post-form .form-control {
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(0, 0, 0, 0.7);
+}
