@@ -1501,10 +1501,28 @@ a.leaderboard-drop {
     background-color: rgba(255,255,255,.02);
 }
 
+#stat-dropdown {
+	padding: 5px 15px;
+	background: #121214;
+}
+
+#stat-dropdown > li {
+	text-align: center;
+}
+
 #stat-dropdown > li > a {
 	font-weight: normal;
-    font-size: 1.2rem;
-	color: #fff;
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 5px 20px;
+	border-radius: 5px;
+	margin: 0;
+	width: 100%;
+	display: block;
+}
+
+#stat-dropdown > li > a:hover, #stat-dropdown > li > a:focus {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 #stat-nav::after {
