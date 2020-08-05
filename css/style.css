@@ -1518,3 +1518,7 @@ a.leaderboard-drop {
     border-bottom: 0;
     border-left: 0.25em solid transparent;
 }
+
+.online {
+	color: #00b894;
+}

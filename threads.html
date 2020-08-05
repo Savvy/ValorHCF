@@ -10,6 +10,7 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
+	<link href="https://cdn.jsdelivr.net/sweetalert2/6.6.0/sweetalert2.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -86,7 +87,7 @@
 								alt="Valor Logo">
 						</div>
 						<div class="col-4" style="display: flex">
-							<div class="mid-right" data-clipboard-text="play.valorhcf.net">
+							<div class="mid-right" id="serverAddress" data-clipboard-text="play.valorhcf.net">
 								<div class="mid-info">
 									<h3>play.valorhcf.net</h3>
 									<h5>Join <span class="player-count">113</span> other players</h5>
@@ -106,7 +107,7 @@
 				<div class="content-header">
 					<div class="header-title">
 						<h2>Announcements</h2>
-						<span>Some decription of this category.</span>
+						<span>News, Updates, SOTW Posts, etc</span>
 					</div>
 					<a href="#" class="new-post">New Post</a>
 				</div>
@@ -221,6 +222,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/sweetalert2/6.6.0/sweetalert2.js"></script>
+	<script>
+		new ClipboardJS('#serverAddress').on('success', e => {
+			swal('Server IP Copied', 'See you soon', 'success')
+		});
+	</script>
 	<script>
 		$(function () {
 			$('[data-toggle="tooltip"]').tooltip()
