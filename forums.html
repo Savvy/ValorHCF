@@ -58,12 +58,11 @@
 						</div>
 					</div>
 					<div class="col-3">
-						<div class="user-status toggle-tooltip" data-placement="bottom" data-original-title="Login"
-							style="float: right;">
-							<a href="/login" id="login" class="login-btn btn btn-info"
-								style="border-radius: 5px;">Login</a>
-							<a href="/register" id="register" class="login-btn btn btn-info"
-								style="border-radius: 5px;">Register</a>
+						<div class="user-status toggle-tooltip" data-placement="bottom" data-original-title="Login" style="float: right;">
+							<a href="#" id="login" class="login-btn btn btn-info" style="border-radius: 5px;" data-toggle="modal"
+								data-target="#loginModal">Login</a>
+							<a href="/register" id="register" data-toggle="modal" data-target="#registerModal"
+								class="login-btn btn btn-info" style="border-radius: 5px;">Register</a>
 						</div>
 					</div>
 				</div>
@@ -449,6 +448,52 @@
 			</div>
 		</div>
 	</div>
+		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="loginModalLabel"><i class="mdi mdi-lock"></i> Login</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Username</label>
+								<input type="text" class="form-control" id="username" aria-describedby="player-name"
+									placeholder="Username">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Password</label>
+								<input type="password" class="form-control" id="password" placeholder="Password">
+							</div>
+							<button type="submit" class="btn btn-primary btn-submit">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="registerModalLabel"><i class="mdi mdi-lock"></i> Register</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p><strong>Step 1</strong> Join our minecraft server "play.valorhcf.net"</p>
+						<p><strong>Step 2</strong> Execute the following command "/register &lt;your email&gt;"</p>
+						<p><strong>Example</strong> /register youremail@example.com</p>
+						<p><strong>Step 3</strong> Confirm your email address recently delivered to your inbox.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	<footer>
 		<div class="container">
 			<div class="footer">

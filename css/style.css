@@ -1541,12 +1541,19 @@ a.leaderboard-drop {
 	color: #00b894;
 }
 
-.post-form {
-	width: 100%;
+form {
 	color: #fff;
 }
 
-.post-form > .post-thread {
+.post-form {
+	width: 100%;
+}
+
+.btn-submit {
+	margin-top: 0 !important;
+}
+
+.btn-submit, .post-form > .post-thread {
 	margin-top:25px;
 	background: #E14444;
 	border: none;
@@ -1557,6 +1564,9 @@ a.leaderboard-drop {
 	outline: none;
 }
 
+.btn-submit, 
+.btn-submit:hover,
+.btn-submit:active,
 .post-form > .post-thread:hover,
 .post-form > .post-thread:active {
 	background: #e85f5f !important;
@@ -1565,7 +1575,14 @@ a.leaderboard-drop {
 	outline: none;
 }
 
-.post-form .form-control {
+.form-control {
+	color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.form-control:focus {
+	color: rgba(255, 255, 255, 0.6);
 	background-color: rgba(0, 0, 0, 0.3);
 	border: 1px solid rgba(0, 0, 0, 0.7);
 }
@@ -1591,3 +1608,45 @@ a.leaderboard-drop {
 	background-color: #E14444;
 	border: 1px solid #E14444;
 }
+
+.modal-content {
+	background-color: #1A1A1D;
+	border-radius: 5px;
+}
+
+.modal-header {
+    color: #fff;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #fff;
+    outline: none !important;
+    border: none !important;
+}
+
+.close:hover {
+	color: #fff;
+	opacity: 0.8;
+}
+
+#registerModal .modal-content {
+	color: #fff;
+}
+
+#registerModal .modal-content .modal-body > p > strong {
+	margin-right: 5px;
+}
+
+/* #registerModal .modal-content .modal-body {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-body > img {
+	align-self: center;
+	margin-bottom: 20px;
+	width: 80px;
+	height: auto;
+} */
