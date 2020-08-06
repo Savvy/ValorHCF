@@ -1631,11 +1631,15 @@ form {
 	opacity: 0.8;
 }
 
-#registerModal .modal-content {
+.register-steps {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	color: #fff;
 }
 
-#registerModal .modal-content .modal-body > p > strong {
+.register-steps > p > strong {
 	margin-right: 5px;
 }
 

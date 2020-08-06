@@ -20,7 +20,7 @@
 		<img src="https://i.imgur.com/9ylTK4r.png" alt="Valor Shield Logo">
 		<i class="menu-toggle-btn mdi mdi-menu"></i>
 		<nav class="navigation-menu">
-			<a href="/">Home</a>
+			<a href="./index.html">Home</a>
 			<a href="./forums.html">Forums</a>
 			<a href="./leaderboard.html">Stats</a>
 			<a href="https://store.valorhcf.net">Store</a>
@@ -41,7 +41,7 @@
 					<div class="col-6">
 						<div class="nav-items">
 							<div class="header-left">
-								<a href="/">Home</a>
+								<a href="./index.html">Home</a>
 								<a href="./forums.html">Forums</a>
 							</div>
 							<img class="header-image" src="https://i.imgur.com/JcTis4d.png" alt="Valor Shield Logo">
@@ -59,8 +59,10 @@
 					</div>
 					<div class="col-3">
 						<div class="user-status toggle-tooltip" data-placement="bottom" data-original-title="Login" style="float: right;">
-							<a href="./login.html" id="login" class="login-btn btn btn-info" style="border-radius: 5px;">Login</a>
-							<a href="./register.html" id="register" class="login-btn btn btn-info" style="border-radius: 5px;">Register</a>
+							<a href="#" id="login" class="login-btn btn btn-info" style="border-radius: 5px;" data-toggle="modal"
+								data-target="#loginModal">Login</a>
+							<a href="/register" id="register" data-toggle="modal" data-target="#registerModal"
+								class="login-btn btn btn-info" style="border-radius: 5px;">Register</a>
 						</div>
 					</div>
 				</div>
@@ -99,111 +101,14 @@
 	</header>
 	<div class="container">
 		<div class="main">
-			<div class="main-header">Valor Network <span>Announcements</span></div>
+			<div class="main-header">Register</div>
 			<div class="main-content">
-				<div class="content-header">
-					<div class="header-title">
-						<h2>Announcements</h2>
-						<span>News, Updates, SOTW Posts, etc</span>
-					</div>
-					<a href="./newpost.html" class="new-post">New Post</a>
-				</div>
-				<div class="threads">
-					<div class="forum">
-						<img src="https://visage.surgeplay.com/head/1bbcbbf2e36646ffb3e6f7db3b428b22" alt="DrePvP">
-						<div class="forum-title">
-							<a href="#">Staff Applications Are Now Open!</a>
-							<div class="forum-meta">
-								<a href="#">whoSavvy</a>
-								<span>June 12, 2020</span>
-							</div>
-						</div>
-						<div class="forum-stats">
-							<div class="forum-stat">
-								<h4>Views</h4>
-								<span>326</span>
-							</div>
-							<div class="forum-stat">
-								<h4>Replies</h4>
-								<span>326</span>
-							</div>
-							<div class="forum-stat">
-								<h4>Last Reply</h4>
-								<span>Today, 6:24 PM</span>
-							</div>
-						</div>
-					</div>
-					<div class="forum">
-						<img src="https://visage.surgeplay.com/head/1bbcbbf2e36646ffb3e6f7db3b428b22" alt="DrePvP">
-						<div class="forum-title">
-							<a href="#">Staff Applications Are Now Open!</a>
-							<div class="forum-meta">
-								<a href="#">whoSavvy</a>
-								<span>June 12, 2020</span>
-							</div>
-						</div>
-						<div class="forum-stats">
-							<div class="forum-stat">
-								<h4>Views</h4>
-								<span>326</span>
-							</div>
-							<div class="forum-stat">
-								<h4>Replies</h4>
-								<span>326</span>
-							</div>
-							<div class="forum-stat">
-								<h4>Last Reply</h4>
-								<span>Today, 6:24 PM</span>
-							</div>
-						</div>
-					</div>
-					<div class="forum">
-						<img src="https://visage.surgeplay.com/head/1bbcbbf2e36646ffb3e6f7db3b428b22" alt="DrePvP">
-						<div class="forum-title">
-							<a href="#">Staff Applications Are Now Open!</a>
-							<div class="forum-meta">
-								<a href="#">whoSavvy</a>
-								<span>June 12, 2020</span>
-							</div>
-						</div>
-						<div class="forum-stats">
-							<div class="forum-stat">
-								<h4>Views</h4>
-								<span>326</span>
-							</div>
-							<div class="forum-stat">
-								<h4>Replies</h4>
-								<span>326</span>
-							</div>
-							<div class="forum-stat">
-								<h4>Last Reply</h4>
-								<span>Today, 6:24 PM</span>
-							</div>
-						</div>
-					</div>
-					<div class="forum">
-						<img src="https://visage.surgeplay.com/head/1bbcbbf2e36646ffb3e6f7db3b428b22" alt="DrePvP">
-						<div class="forum-title">
-							<a href="#">Staff Applications Are Now Open!</a>
-							<div class="forum-meta">
-								<a href="#">whoSavvy</a>
-								<span>June 12, 2020</span>
-							</div>
-						</div>
-						<div class="forum-stats">
-							<div class="forum-stat">
-								<h4>Views</h4>
-								<span>326</span>
-							</div>
-							<div class="forum-stat">
-								<h4>Replies</h4>
-								<span>326</span>
-							</div>
-							<div class="forum-stat">
-								<h4>Last Reply</h4>
-								<span>Today, 6:24 PM</span>
-							</div>
-						</div>
+				<div class="container">
+					<div class="register-steps">
+						<p><strong>Step 1</strong> Join our minecraft server "play.valorhcf.net"</p>
+						<p><strong>Step 2</strong> Execute the following command "/register &lt;your email&gt;"</p>
+						<p><strong>Example</strong> /register youremail@example.com</p>
+						<p><strong>Step 3</strong> Confirm your email address recently delivered to your inbox.</p>
 					</div>
 				</div>
 			</div>
