@@ -1680,6 +1680,9 @@ form {
 }
 
 @media(max-width: 576px) {
+	#leaderboard-title {
+		display: none;
+	}
 	header {
 		height: 210px;
 	}
