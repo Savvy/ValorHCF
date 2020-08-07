@@ -1698,4 +1698,8 @@ form {
 	.forum-stats {
 		display: none !important;
 	}
+
+	.threads > .forum > img {
+		width: 25px;
+	}
 }
