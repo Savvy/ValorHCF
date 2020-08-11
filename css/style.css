@@ -1708,7 +1708,19 @@ form {
 	.forum-post > .user-meta {
 		flex: 0 0 100px;
 	}
-	.right-content img {
-    	width: 80px;
+
+	.what-is {
+		flex-direction: column;
 	}
+
+	.what-is .left-content > p {
+		text-align: center;
+	}
+
+	.left-item {
+		margin-right: 5px !important;
+	}
+	/* .right-content img {
+    	width: 80px;
+	} */
 }
