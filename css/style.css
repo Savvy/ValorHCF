@@ -1764,3 +1764,30 @@ form {
 	}
 
 }
+
+.swal2-modal,
+.swal2-success-circular-line-left,
+.swal2-success-circular-line-right,
+.swal2-success-fix {
+	background: #1A1A1D !important;
+}
+
+.swal2-icon.swal2-success .swal2-success-ring {
+	border-color: #1A1A1D !important;
+}
+
+.swal2-modal .swal2-title, .swal2-content {
+	color: #eee !important;
+}
+
+.swal2-confirm {
+	background-color: #E14444 !important;
+	border-color: #E14444 !important;
+	border-radius: 5px !important;
+	outline: none !important;
+	transition: background 0.08s ease-in-out !important;
+}
+
+.swal2-confirm:hover {
+	background-color: #e55b5b !important;
+}
