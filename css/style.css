@@ -483,6 +483,15 @@ a.new-post {
     height: auto;
 }
 
+/* .owner, .partner, .plat-admin, .mod {
+	opacity: 0.7;
+}
+
+.owner:hover, .partner:hover, .plat-admin:hover, .mod:hover {
+	opacity: 1;
+}
+ */
+
 .owner, .owner:hover {
 	color: #AA0000;
 }
@@ -499,6 +508,14 @@ a.new-post {
 	color: #AA00AA;
 }
 
+.opac-hover {
+	opacity: 0.7;
+}
+
+.opac-hover:hover {
+	opacity: 1;
+}
+
 .owner-badge,
 .owner-badge:hover {
 	color: #fff;
@@ -507,16 +524,19 @@ a.new-post {
 
 .partner-badge,
 .partner-badge:hover {
+	color: #000;
 	background-color: #55FFFF;
 }
 
 .plat-admin-badge,
 .plat-admin-badge:hover {
+	color: #fff;
 	background-color: #FF5555;
 }
 
 .mod-badge,
 .mod-badge:hover {
+	color: #fff;
 	background-color: #AA00AA;
 }
 
@@ -1231,7 +1251,6 @@ display: flex;
 .staff-group {
 	display: flex;
 	flex-wrap: wrap;
-	flex-wrap: wrap;
 }
 
 .staff-group > .staff-member {
@@ -1239,14 +1258,18 @@ display: flex;
     margin-right: 10px;
     border-radius: 5px;
 	display: flex;
-	flex-direction: row;
-	padding: 5px 20px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20px;
 	margin-top: 5px;
+	flex: 1 1 calc(25% - 10px);
 }
 
 .staff-group > .staff-member > img {
-	width: 60px;
-	margin-right: 5px;
+	-webkit-transform: scaleX(-1);
+  	transform: scaleX(-1);
+	width: 80px;
     height: auto;
 }
 
@@ -1259,7 +1282,7 @@ display: flex;
 
 .staff-group > .staff-member > .meta > span {
 	font-size: 0.8rem;
-    align-self: flex-start;
+    align-self: center;
 	color: #fff;
 }
 
@@ -1790,4 +1813,42 @@ form {
 
 .swal2-confirm:hover {
 	background-color: #e55b5b !important;
+}
+
+.side-nav {
+	background: rgba(0, 0, 0, 0.35);
+	border-radius: 5px;
+	position: sticky;
+	top: 25px;
+}
+
+.side-nav > .side-nav-title {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 10px 0;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.35);
+}
+
+.side-nav > .side-nav-title > h4 {
+	color: #fff;
+}
+
+.nav-tags {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px 15px;
+}
+
+.nav-tags > a {
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 5px;
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	padding: 10px 15px;
+	background: rgba(0, 0, 0, 0.35);
+	margin-bottom: 10px;
 }
