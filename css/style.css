@@ -1832,6 +1832,7 @@ form {
 
 .side-nav > .side-nav-title > h4 {
 	color: #fff;
+	margin: 0;
 }
 
 .nav-tags {
