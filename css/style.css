@@ -1853,3 +1853,36 @@ form {
 	background: rgba(0, 0, 0, 0.35);
 	margin-bottom: 10px;
 }
+
+.card {
+	background: rgba(0, 0, 0, 0.35);
+}
+
+.nav-tabs {
+	border-bottom: none;
+}
+
+#stats-nav {
+	border-bottom: none;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#stats-nav .nav-link {
+	border: none;
+	background: none;
+	color: #fff;
+}
+
+#stats-nav .nav-link:hover {
+	border: none;
+	border-radius: 5px;
+	color: #E14444;
+}
+
+#stats-nav > .nav-item > .nav-link.active {
+	background: rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 5px;
+    color: #eee;
+}

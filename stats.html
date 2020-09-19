@@ -58,9 +58,12 @@
 						</div>
 					</div>
 					<div class="col-3">
-						<div class="user-status toggle-tooltip" data-placement="bottom" data-original-title="Login" style="float: right;">
-							<a href="./login.html" id="login" class="login-btn btn btn-info" style="border-radius: 5px;">Login</a>
-							<a href="./register.html" id="register" class="login-btn btn btn-info" style="border-radius: 5px;">Register</a>
+						<div class="user-status toggle-tooltip" data-placement="bottom" data-original-title="Login"
+							style="float: right;">
+							<a href="./login.html" id="login" class="login-btn btn btn-info"
+								style="border-radius: 5px;">Login</a>
+							<a href="./register.html" id="register" class="login-btn btn btn-info"
+								style="border-radius: 5px;">Register</a>
 						</div>
 					</div>
 				</div>
@@ -194,6 +197,65 @@
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane active" id="general" role="tabpanel" aria-labelledby="general-tab">
+									<div class="row mb-3">
+										<div class="col-6">
+											<div class="card">
+												<div class="card-body">
+													<div class="row align-items-center">
+														<div class="col">
+															<h6 class="text-uppercase text-muted mb-2">
+																First Joined
+															</h6>
+															<span class="h6 mb-0">
+																<strong>203 Days</strong> ago
+															</span>
+														</div>
+														<div class="col-auto">
+															<i class="h2 mdi mdi-plus text-muted mb-0"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="card">
+												<div class="card-body">
+													<div class="row align-items-center">
+														<div class="col">
+															<h6 class="text-uppercase text-muted mb-2">
+																Time Played
+															</h6>
+															<span class="h6 mb-0">
+																<strong>24 Days</strong> played
+															</span>
+														</div>
+														<div class="col-auto">
+															<i class="h2 mdi mdi-clock text-muted mb-0"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 mt-3">
+											<div class="card">
+												<div class="card-body">
+													<div class="row align-items-center">
+														<div class="col">
+															<h6 class="text-uppercase text-muted mb-2">
+																Views Per Month
+															</h6>
+															<span class="h6 mb-0">
+																<strong>265</strong> Average
+															</span>
+														</div>
+														<div class="col-auto">
+															<i class="h2 mdi mdi-eye text-muted mb-0"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 									<div class="profile-comments">
 										<h4>Comments</h4>
 										<div class="user-comment">
@@ -250,7 +312,222 @@
 									</div>
 								</div>
 								<div class="tab-pane" id="player-stats" role="tabpanel" aria-labelledby="stats-tab">
-									<div class="player-stat">
+								
+									<ul class="nav nav-tabs mb-3" id="stats-nav" role="tablist">
+										<li class="nav-item">
+											<a class="mr-3 nav-link active" id="hcf-tab" data-toggle="tab" href="#hcf" role="tab" aria-controls="hcf"
+												aria-selected="true">HCF</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="kits-tab" data-toggle="tab" href="#kits" role="tab" aria-controls="kits"
+												aria-selected="false">Kits</a>
+										</li>
+									</ul>
+									<div class="tab-content" id="myTabContent">
+										<div class="tab-pane fade show active" id="hcf" role="tabpanel" aria-labelledby="hcf-tab">
+											<div class="container">
+												<div class="row">
+													<div class="col-6 mb-3">
+														<div class="card">
+															<div class="card-body">
+																<div class="row align-items-center">
+																	<div class="col">
+																		<div class="text-uppercase text-muted mb-2">
+																			Kills
+																		</div>
+																		<span class="h6 text-white mb-0">
+																			<strong>203</strong>
+																		</span>
+																	</div>
+																	<div class="col-auto">
+																		<i class="h2 mdi mdi-target text-muted mb-0"></i>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-6 mb-3">
+														<div class="card">
+															<div class="card-body">
+																<div class="row align-items-center">
+																	<div class="col">
+																		<div class="text-uppercase text-muted mb-2">
+																			Deaths
+																		</div>
+																		<span class="h6 text-white mb-0">
+																			<strong>406</strong>
+																		</span>
+																	</div>
+																	<div class="col-auto">
+																		<i class="h2 mdi mdi-skull text-muted mb-0"></i>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-6 mb-3">
+														<div class="card">
+															<div class="card-body">
+																<div class="row align-items-center">
+																	<div class="col">
+																		<div class="text-uppercase text-muted mb-2">
+																			Diamonds Mined
+																		</div>
+																		<span class="h6 text-white mb-0">
+																			<strong>2,305</strong>
+																		</span>
+																	</div>
+																	<div class="col-auto">
+																		<i class="h2 mdi mdi-diamond text-muted mb-0"></i>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-6 mb-3">
+														<div class="card">
+															<div class="card-body">
+																<div class="row align-items-center">
+																	<div class="col">
+																		<div class="text-uppercase text-muted mb-2">
+																			Gem Balance
+																		</div>
+																		<span class="h6 text-white mb-0">
+																			<strong>5,076</strong>
+																		</span>
+																	</div>
+																	<div class="col-auto">
+																		<i class="h2 mdi mdi-cash text-muted mb-0"></i>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-6">
+														<div class="card">
+															<div class="card-body">
+																<div class="row align-items-center">
+																	<div class="col">
+																		<div class="text-uppercase text-muted mb-2">
+																			Faction
+																		</div>
+																		<span class="h6 text-white mb-0">
+																			<strong>Polymer</strong>
+																		</span>
+																	</div>
+																	<div class="col-auto">
+																		<i class="h2 mdi mdi-account-group text-muted mb-0"></i>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="kits" role="tabpanel" aria-labelledby="kits-tab">
+											<div class="container">
+												<div class="row">
+													<div class="col-6 mb-3">
+														<div class="card">
+															<div class="card-body">
+																<div class="row align-items-center">
+																	<div class="col">
+																		<div class="text-uppercase text-muted mb-2">
+																			Kills
+																		</div>
+																		<span class="h6 text-white mb-0">
+																			<strong>203</strong>
+																		</span>
+																	</div>
+																	<div class="col-auto">
+																		<i class="h2 mdi mdi-target text-muted mb-0"></i>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-6 mb-3">
+														<div class="card">
+															<div class="card-body">
+																<div class="row align-items-center">
+																	<div class="col">
+																		<div class="text-uppercase text-muted mb-2">
+																			Deaths
+																		</div>
+																		<span class="h6 text-white mb-0">
+																			<strong>406</strong>
+																		</span>
+																	</div>
+																	<div class="col-auto">
+																		<i class="h2 mdi mdi-skull text-muted mb-0"></i>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-6 mb-3">
+														<div class="card">
+															<div class="card-body">
+																<div class="row align-items-center">
+																	<div class="col">
+																		<div class="text-uppercase text-muted mb-2">
+																			Diamonds Mined
+																		</div>
+																		<span class="h6 text-white mb-0">
+																			<strong>2,305</strong>
+																		</span>
+																	</div>
+																	<div class="col-auto">
+																		<i class="h2 mdi mdi-diamond text-muted mb-0"></i>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-6 mb-3">
+														<div class="card">
+															<div class="card-body">
+																<div class="row align-items-center">
+																	<div class="col">
+																		<div class="text-uppercase text-muted mb-2">
+																			Gem Balance
+																		</div>
+																		<span class="h6 text-white mb-0">
+																			<strong>5,076</strong>
+																		</span>
+																	</div>
+																	<div class="col-auto">
+																		<i class="h2 mdi mdi-cash text-muted mb-0"></i>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-6">
+														<div class="card">
+															<div class="card-body">
+																<div class="row align-items-center">
+																	<div class="col">
+																		<div class="text-uppercase text-muted mb-2">
+																			Faction
+																		</div>
+																		<span class="h6 text-white mb-0">
+																			<strong>Polymer</strong>
+																		</span>
+																	</div>
+																	<div class="col-auto">
+																		<i class="h2 mdi mdi-account-group text-muted mb-0"></i>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								<!-- 	<div class="player-stat">
 										<div class="stat">
 											<div class="stat-header">
 												<h5>HCF</h5>
@@ -275,7 +552,7 @@
 												<li>Faction <span>Unknown</span></li>
 											</ul>
 										</div>
-									</div>
+									</div> -->
 								</div>
 								<div class="tab-pane" id="forum" role="tabpanel" aria-labelledby="forum-tab">
 									<div class="forum-posts">
