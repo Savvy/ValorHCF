@@ -492,20 +492,29 @@ a.new-post {
 }
  */
 
-.owner, .owner:hover {
+.manager, .manager:hover, .owner, .owner:hover {
 	color: #AA0000;
 }
 
+.developer, .developer:hover,
 .partner, .partner:hover {
 	color: #55FFFF;
 }
 
+.admin, .admin:hover,
+.sr-admin, .sr-admin:hover,
 .plat-admin, .plat-admin:hover {
 	color: #FF5555;
 }
 
+.sr-mod, .sr-mod:hover,
+.mod-plus, .mod-plus:hover,
 .mod, .mod:hover {
 	color: #AA00AA;
+}
+
+.trial-mod, .trial-mod:hover {
+	color: #00AAAA;
 }
 
 .opac-hover {
@@ -516,18 +525,26 @@ a.new-post {
 	opacity: 1;
 }
 
+.manager-badge, .manager-badge:hover,
 .owner-badge,
 .owner-badge:hover {
 	color: #fff;
 	background-color: #AA0000;
 }
 
-.partner-badge,
-.partner-badge:hover {
+.developer-badge,
+.developer-badge:hover {
 	color: #000;
 	background-color: #55FFFF;
 }
 
+.developer-badge > h4 {
+	color: #000 !important;
+}
+
+.sr-admin-badge,
+.sr-admin-badge:hover,
+.admin-badge, .admin-badge:hover,
 .plat-admin-badge,
 .plat-admin-badge:hover {
 	color: #fff;
@@ -535,9 +552,17 @@ a.new-post {
 }
 
 .mod-badge,
-.mod-badge:hover {
+.mod-badge:hover,
+.sr-mod-badge,
+.sr-mod-badge:hover,
+.mod-plus-badge,
+.mod-plus-badge:hover {
 	color: #fff;
 	background-color: #AA00AA;
+}
+
+.trial-mod-badge, .trial-mod-badge:hover {
+	background-color: #00AAAA;
 }
 
 .staff-badge,
@@ -1235,7 +1260,7 @@ display: flex;
 }
 
 .staff-header {
-    background: #E14444;
+   /* background: #E14444; */
     padding: 10px 20px;
 	border-radius: 5px;
 	margin-bottom: 10px;
