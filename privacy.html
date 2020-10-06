@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
+	<link href="https://cdn.jsdelivr.net/sweetalert2/6.6.0/sweetalert2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+	<div class="mobile-nav">
+		<img src="https://i.imgur.com/9ylTK4r.png" alt="Valor Shield Logo">
+		<i class="menu-toggle-btn mdi mdi-menu"></i>
+		<nav class="navigation-menu">
+			<a href="./index.html">Home</a>
+			<a href="./forums.html">Forums</a>
+			<a href="./leaderboard.html">Stats</a>
+			<a href="https://store.valorhcf.net">Store</a>
+			<a href="#">Login</a>
+			<a href="#">Register</a>
+		</nav>
+	</div>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="header-nav">
+					<div class="col-3">
+						<div class="search-group">
+							<div class="search-icon"><i class="mdi mdi-magnify"></i></div>
+							<input type="search" placeholder="Search">
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="nav-items">
+							<div class="header-left">
+								<a href="./index.html">Home</a>
+								<a href="./forums.html">Forums</a>
+							</div>
+							<img class="header-image" src="https://i.imgur.com/JcTis4d.png" alt="Valor Shield Logo">
+							<div class="header-right dropdown">
+								<a id="stat-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Stats
+								</a>
+								<ul id="stat-dropdown" class="dropdown-menu" aria-labelledby="stat-nav">
+									<li><a href="#">HCF</a></li>
+									<li><a href="#">Kits</a></li>
+								</ul>
+								<a href="https://store.valorhcf.net">Store</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="user-status toggle-tooltip" data-placement="bottom" data-original-title="Login"
+							style="float: right;">
+							<a href="#" id="login" class="login-btn btn btn-info" style="border-radius: 5px;"
+								data-toggle="modal" data-target="#loginModal">Login</a>
+							<a href="/register" id="register" data-toggle="modal" data-target="#registerModal"
+								class="login-btn btn btn-info" style="border-radius: 5px;">Register</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mid-header">
+			<div class="container">
+				<div class="row">
+					<div class="mobile-mid">
+						<h3 id="serverAddress" data-clipboard-text="play.valorhcf.net">play.valorhcf.net</h3>
+						<h5>Join <span class="player-count">113</span> other players</h5>
+					</div>
+					<div class="mid-content">
+						<div class="col-4" style="display: flex;">
+							<a href="https://discord.gg/DcfGVE2" target="_blank" class="mid-left">
+								<i class="mdi mdi-discord"></i>
+								<div class="mid-info">
+									<h3>Our Discord Servers</h3>
+									<h5><span class="discord-count">1363</span> members online</h5>
+								</div>
+							</a>
+						</div>
+						<div class="col-4" style="display: flex; justify-content: center; align-items: center">
+							<img class="img-fluid" id="mid-image" src="https://i.imgur.com/WoG13Wk.png"
+								alt="Valor Logo">
+						</div>
+						<div class="col-4" style="display: flex">
+							<div class="mid-right" id="serverAddress" data-clipboard-text="play.valorhcf.net">
+								<div class="mid-info">
+									<h3>play.valorhcf.net</h3>
+									<h5>Join <span class="player-count">113</span> other players</h5>
+								</div>
+								<i class="mdi mdi-gamepad-variant"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="main">
+			<div class="main-header">Privacy Policy</div>
+			<div class="main-content">
+				<div class="container">
+					<div class="tos">
+						<h5>Header</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non dictum felis. Ut at maximus velit, eget suscipit dui.
+							Donec quam libero, volutpat quis laoreet et, volutpat et dui. Curabitur tincidunt orci ornare, gravida odio ac,
+							scelerisque lectus. Etiam eros est, feugiat vitae urna sit amet, porta maximus nibh. Integer pulvinar nisl nec aliquet
+							imperdiet. Mauris sed nunc erat. Nullam a dolor eget enim suscipit pellentesque at in nunc. Sed sed nisl mattis,
+							ullamcorper arcu id, imperdiet ipsum. Pellentesque bibendum vitae lectus eu cursus. Praesent ut est consequat, rhoncus
+							felis dictum, lacinia odio. Proin aliquet aliquam lorem, et ultricies mi lobortis vitae. Maecenas a mi ut metus rhoncus
+							hendrerit vel ac sapien.</p>
+						<h5>Header</h5>
+						<p>Quisque vehicula volutpat turpis, ac porttitor nulla placerat at. Morbi molestie quis libero quis interdum. Vestibulum
+						in tristique lacus. Donec sollicitudin laoreet ex in iaculis. Nunc nec lorem quis erat faucibus rutrum id non enim.
+						Vivamus eget odio vel massa dictum scelerisque. Ut venenatis blandit lectus sit amet condimentum. Nulla a tempus arcu.
+						Aliquam erat volutpat. Mauris a nunc in magna finibus consectetur et et enim. Cras risus est, dapibus eget odio id,
+						tristique eleifend nisi. Nunc semper consequat tortor, non suscipit felis ultrices non. Pellentesque habitant morbi
+						tristique senectus et netus et malesuada fames ac turpis egestas. Aenean porttitor facilisis orci a commodo.
+					</p>
+					<p>Curabitur felis nisi, accumsan quis ultrices nec, tincidunt ac mauris. Nulla quis lacus consequat, sollicitudin mi vel,
+					viverra urna. Curabitur accumsan volutpat tempus. Nunc est nisi, imperdiet quis nunc vitae, efficitur aliquam nulla.
+					Suspendisse eu facilisis urna. Curabitur dapibus nisl ut elit dictum, sed laoreet velit vestibulum. Ut hendrerit non leo
+					vel iaculis. Integer dictum interdum velit a maximus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+					posuere cubilia curae; Proin auctor tellus sit amet lectus pretium, vitae placerat mauris sodales. In fringilla, leo
+					facilisis consequat vestibulum, nibh lorem viverra lectus, vel pharetra mi diam a purus. Maecenas eu ornare justo.
+					Vivamus a sapien ac lorem consectetur iaculis. Mauris dapibus tempor scelerisque.
+				</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="footer">
+				&copy; 2020 ValorHCF All Rights Reserved.
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/sweetalert2/6.6.0/sweetalert2.js"></script>
+	<script>
+		new ClipboardJS('#serverAddress').on('success', e => {
+			swal('Server IP Copied', 'See you soon', 'success')
+		});
+	</script>
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+	<script>
+		$(".menu-toggle-btn").click(function () {
+			//$(this).toggleClass("fa-times");
+			$(".navigation-menu").slideToggle(function () {
+				console.log('Test');
+				$(".navigation-menu").toggleClass("active");
+			});
+		});
+	</script>
+</body>
+
+</html>
